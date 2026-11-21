@@ -108,12 +108,6 @@ dialog img { display: block; width: 100%; max-height: 75vh; object-fit: contain;
   font-family: "Gowun Dodum", system-ui, sans-serif;
 }
 .invitation { padding: clamp(2.6rem, 10vw, 4rem) 1rem 1.6rem; }
-.poster-kicker {
-  margin: 0 0 .8rem;
-  color: #904a33;
-  font-size: .875rem;
-  letter-spacing: .17em;
-}
 .hero h1 {
   margin: 0 auto;
   color: #2e241f;
@@ -141,3 +135,26 @@ dialog img { display: block; width: 100%; max-height: 75vh; object-fit: contain;
   height: auto;
   mix-blend-mode: multiply;
 }
+
+.hero .button, #welcome { font-family: "Gowun Dodum", system-ui, sans-serif; }
+
+.rsvp-form {
+  display: grid;
+  gap: .55rem;
+  max-width: 22rem;
+  margin: 1.25rem auto 0;
+  text-align: left;
+}
+.rsvp-form > label { font-weight: 700; }
+.rsvp-form > input {
+  min-height: 2.75rem;
+  border: 1px solid #c2ad94;
+  border-radius: .35rem;
+  background: #fffdf8;
+  padding: .5rem .7rem;
+  font: inherit;
+}
+.rsvp-form .button { font: inherit; font-weight: 700; }
+.rsvp-form .button:disabled { opacity: .58; }
+#rsvp-status { margin: 0; text-align: center; }
+#rsvp-status:empty { display: none; }
