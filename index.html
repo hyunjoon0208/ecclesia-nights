@@ -15,7 +15,6 @@
 <body>
   <header class="hero">
     <div class="invitation">
-      <p class="poster-kicker">2026 연말 초대</p>
       <p class="host">안중순복음교회 에클레시아 청년회</p>
       <h1>Ecclesia Nights</h1>
       <p class="tagline">One Night, One Community</p>
@@ -58,9 +57,14 @@
     </section>
     <section id="rsvp" class="section response" aria-labelledby="attendance">
       <h2 id="attendance">참석 여부</h2>
-      <p>12월 4일 금요일까지 알려주세요.</p>
-      <a id="survey" class="button" hidden>설문 열기</a>
-      <p id="survey-status">참석 설문 링크는 준비 중입니다.</p>
+      <p>참석하실 분은 12월 4일 금요일까지 이름을 남겨주세요.</p>
+      <p>함께 오실 일행이 있다면 이 초대장을 보내주세요. 신청은 한 분씩 해주세요.</p>
+      <form id="rsvp-form" class="rsvp-form">
+        <label for="guest-name">이름</label>
+        <input id="guest-name" name="name" autocomplete="name" placeholder="이름을 입력해 주세요" maxlength="60" required>
+        <button class="button" type="submit" disabled>응답 보내기</button>
+        <p id="rsvp-status" role="status">응답 접수를 준비 중입니다.</p>
+      </form>
     </section>
     <section class="section" aria-labelledby="directions">
       <p class="eyebrow" aria-hidden="true">Location</p>
