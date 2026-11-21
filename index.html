@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6ef">
+  <title>ECCLESIA NIGHTS | 에클레시아 청년회</title>
+  <meta name="description" content="12월 5일 토요일 17:30, 안중순복음교회. 에클레시아 청년회가 여러분을 초대합니다.">
+  <meta property="og:title" content="ECCLESIA NIGHTS">
+  <meta property="og:description" content="2026년 12월 5일 토요일 17:30 · 안중순복음교회">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Gowun+Dodum&amp;display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./rsvp.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="invitation">
+      <p class="poster-kicker">2026 연말 초대</p>
+      <p class="host">안중순복음교회 에클레시아 청년회</p>
+      <h1>Ecclesia Nights</h1>
+      <p class="tagline">One Night, One Community</p>
+      <div class="event">
+        <time datetime="2026-12-05T17:30:00+09:00">2026.12.05 SAT</time>
+        <p>17:30–21:00 · 안중순복음교회</p>
+      </div>
+      <a class="button" href="#rsvp">참석 여부 알려주기</a>
+    </div>
+    <img class="dinner-art" src="./assets/dinner-table.webp" width="1080" height="720" alt="">
+  </header>
+  <main>
+    <section class="section intro" aria-labelledby="welcome">
+      <p class="eyebrow" aria-hidden="true">Invitation</p>
+      <h2 id="welcome">여러분을 초대합니다</h2>
+      <p>오랜만에 보는 얼굴도, 처음 함께하는 분도 모두 환영합니다!</p>
+      <p>맛있는 식사와 즐거운 프로그램을 준비했으니 부담 없이 편하게 놀러 오세요 :)</p>
+      <p>12월 5일, ECCLESIA NIGHTS에서 만나요!</p>
+    </section>
+    <section class="section" aria-labelledby="details">
+      <h2 id="details">행사 안내</h2>
+      <dl>
+        <div><dt>일시</dt><dd>12월 5일 토요일 17:30–21:00</dd></div>
+        <div><dt>장소</dt><dd>안중순복음교회</dd></div>
+        <div><dt>대상</dt><dd>청년 누구나</dd></div>
+        <div><dt>드레스코드</dt><dd>세미정장</dd></div>
+        <div><dt>참가비</dt><dd>무료</dd></div>
+      </dl>
+      <p>레크리에이션, 저녁 식사, 짧은 찬양과 말씀, 시상식을 함께해요.</p>
+    </section>
+    <section class="section" aria-labelledby="gallery">
+      <p class="eyebrow" aria-hidden="true">Gallery</p>
+      <h2 id="gallery">에클레시아 사진첩</h2>
+      <p>함께한 순간들. 사진을 누르면 크게 볼 수 있어요.</p>
+      <ul class="gallery">
+        <li><a href="./assets/outdoors.webp"><img src="./assets/outdoors.webp" loading="lazy" alt="햇살 아래 공원에서 찍은 청년회 단체 사진"></a></li>
+        <li><a href="./assets/gathering.webp"><img src="./assets/gathering.webp" loading="lazy" alt="풍선 장식 앞에서 찍은 청년회 단체 사진"></a></li>
+        <li><a href="./assets/bowling.webp"><img src="./assets/bowling.webp" loading="lazy" alt="볼링장에서 찍은 청년회 단체 사진"></a></li>
+      </ul>
+    </section>
+    <section id="rsvp" class="section response" aria-labelledby="attendance">
+      <h2 id="attendance">참석 여부</h2>
+      <p>12월 4일 금요일까지 알려주세요.</p>
+      <a id="survey" class="button" hidden>설문 열기</a>
+      <p id="survey-status">참석 설문 링크는 준비 중입니다.</p>
+    </section>
+    <section class="section" aria-labelledby="directions">
+      <p class="eyebrow" aria-hidden="true">Location</p>
+      <h2 id="directions">오시는 길</h2>
+      <p><strong>안중순복음교회</strong><br>경기 평택시 현덕면 인광길 15</p>
+      <figure class="map">
+        <img src="./assets/directions.svg" width="480" height="562" loading="lazy" alt="안중순복음교회, 안현로 113의 CU, 인광길·현덕로·안현로·인광1길·도대1로가 표시된 주변 지도.">
+        <figcaption>지도 데이터 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap 기여자</a></figcaption>
+      </figure>
+      <div class="map-links">
+        <a class="button outline" href="https://map.kakao.com/link/search/안중순복음교회">카카오맵</a>
+        <a class="button outline" href="https://map.naver.com/p/search/안중순복음교회">네이버 지도</a>
+      </div>
+    </section>
+  </main>
+  <dialog id="photo-viewer" aria-label="사진 크게 보기">
+    <form method="dialog"><button autofocus aria-label="사진 닫기">닫기</button></form>
+    <img alt="">
+  </dialog>
+  <footer>
+    <p>행사 문의 · 오민영</p>
+    <a href="tel:01055409718">010-5540-9718</a>
+  </footer>
+</body>
+</html>

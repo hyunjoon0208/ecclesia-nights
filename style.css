@@ -1,0 +1,143 @@
+:root {
+  color-scheme: light;
+  font: 100%/1.65 system-ui, sans-serif;
+  color: #182034;
+  background: #f8f6ef;
+  --navy: #11182c;
+  --gold: #e7c98d;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+p { margin: .65rem 0; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: .6rem 1.25rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 750;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.outline { background: transparent; border-color: #866c38; }
+a:focus-visible { outline: 3px solid #467fd7; outline-offset: 4px; }
+main { max-width: 42rem; margin: auto; padding: 0 1.25rem; }
+.section { padding: 2.2rem 0; border-bottom: 1px solid #d6cdbb; }
+.section:last-child { border-bottom: 0; }
+.intro, .response { text-align: center; }
+h2 { margin: 0 0 1rem; font-size: 1.45rem; }
+dl { margin: 0; }
+dl div { display: grid; grid-template-columns: 6.3rem 1fr; padding: .48rem 0; }
+dt { font-weight: 700; }
+dd { margin: 0; }
+.gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 88%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: .7rem;
+  padding: .3rem .25rem .65rem;
+  margin: .7rem 0 0;
+  list-style: none;
+}
+.gallery li { scroll-snap-align: start; }
+.gallery a { display: block; }
+.gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+footer { padding: 1.6rem 1rem 2rem; background: var(--navy); color: #fff8ea; text-align: center; }
+@media (min-width: 640px) { .gallery { grid-auto-columns: 1fr; } }
+
+body {
+  background: #eae5d9;
+}
+.hero, main, footer {
+  max-width: 34rem;
+  margin-inline: auto;
+}
+.button { border-radius: .35rem; }
+main {
+  background: #fdfaf2;
+  padding: 0 clamp(1.15rem, 5vw, 2.4rem);
+}
+.section { padding-block: 3.4rem; }
+.eyebrow {
+  color: #765227;
+  font: italic 1rem Georgia, serif;
+  margin: 0 0 .55rem;
+}
+h2 { font-family: "AppleMyungjo", "Batang", Georgia, serif; font-size: clamp(1.55rem, 6vw, 2rem); }
+.intro p:not(.eyebrow) { max-width: 19rem; margin: .85rem auto; word-break: keep-all; }
+.gallery { grid-auto-columns: 86%; }
+.gallery img { border-radius: .55rem; object-fit: cover; }
+.response {
+  padding-inline: .85rem;
+  background: #f2ecdf;
+  border: 1px solid #e1d4af;
+  border-radius: .6rem;
+  margin-block: 1.65rem 0;
+}
+.map { margin: 1.15rem 0; }
+.map img { display: block; width: 100%; height: auto; }
+.map figcaption { margin-top: .4rem; color: #665944; font-size: .875rem; }
+.map-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: .55rem; }
+.map-links a { padding-inline: .45rem; }
+dialog {
+  border: 0;
+  width: min(96%, 54rem);
+  padding: .65rem;
+  background: #11182c;
+  color: white;
+  border-radius: .6rem;
+}
+dialog::backdrop { background: #101522dc; }
+dialog form { display: flex; justify-content: flex-end; margin-bottom: .5rem; }
+dialog button { min-height: 44px; padding-inline: 1rem; font: inherit; cursor: pointer; }
+dialog img { display: block; width: 100%; max-height: 75vh; object-fit: contain; }
+
+.hero {
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 16%, #fffcf7, #faf6ef 74%);
+  color: #2e241f;
+  text-align: center;
+  font-family: "Gowun Dodum", system-ui, sans-serif;
+}
+.invitation { padding: clamp(2.6rem, 10vw, 4rem) 1rem 1.6rem; }
+.poster-kicker {
+  margin: 0 0 .8rem;
+  color: #904a33;
+  font-size: .875rem;
+  letter-spacing: .17em;
+}
+.hero h1 {
+  margin: 0 auto;
+  color: #2e241f;
+  font: 400 clamp(2.8rem, 12vw, 5.15rem)/1.06 "Allura", "Snell Roundhand", cursive;
+}
+.tagline {
+  margin: .45rem 0 1.45rem;
+  font: italic 1rem Georgia, serif;
+  letter-spacing: .02em;
+}
+.event { margin: 0 auto 1rem; }
+.event time { font-weight: 700; letter-spacing: .15em; }
+.event p { margin: .25rem 0 0; }
+.host { margin: 0 0 1.15rem; color: #6f5549; font-size: .875rem; }
+.hero .button {
+  border-color: #a6583c;
+  border-radius: 999px;
+  color: #813e2c;
+  background: transparent;
+}
+.hero .button:hover { background: #f5e7db; }
+.dinner-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
